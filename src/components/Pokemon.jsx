@@ -22,8 +22,8 @@ const Pokemon = ({ pokemon }) => {
         <p>{name}</p>
       </div>
       <div className="pokemon__meta">
-        <span>{maxHP}</span>
-        <span>{maxCP}</span>
+        <span className="pokemon__metaSpan">{maxHP}HP</span>
+        <span className="pokemon__metaSpan">{maxCP}CP</span>
       </div>
       <div className="pokemon__image">
         <img src={image} alt={name} />
@@ -38,8 +38,8 @@ const Pokemon = ({ pokemon }) => {
           ({ name: specialAttackName, damage: specialAttackDamage }) => {
             return (
               <div className="pokemon__attacksSpecial" key={specialAttackName}>
-                <p>special harm: {specialAttackName}</p>
-                <p>special dmg: {specialAttackDamage}</p>
+                <p> {specialAttackName}</p>
+                <p> {specialAttackDamage}</p>
               </div>
             );
           }
