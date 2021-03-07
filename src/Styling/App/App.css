@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: "Pokemon Hollow";
+  src: url("../../fonts/Pokemon Hollow.ttf") format("truetype");
+}
+
+.app {
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.app .app__title {
+  font-family: "Pokemon Hollow", Arial, Helvetica, sans-serif;
+  font-size: 8rem;
+  letter-spacing: 1.5rem;
+  color: #1b1b1b;
+}
+/*# sourceMappingURL=App.css.map */
