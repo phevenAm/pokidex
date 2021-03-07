@@ -44,9 +44,12 @@ html {
 .pokemon {
   background: #ececec;
   padding: 1rem;
+  margin: 0 1rem;
   margin-bottom: 3rem;
   border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.322);
+  position: relative;
+  transition: all 0.25s ease-in-out;
 }
 
 .pokemon .pokemon__name {
@@ -58,8 +61,13 @@ html {
   width: 200px;
   height: 200px;
   object-fit: contain;
-  border: solid 1px #3a3a3a;
+  border: solid 2px #3a3a3a;
   padding: 2rem;
   background: white;
+}
+
+.pokemon:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.322);
 }
 /*# sourceMappingURL=App.css.map */
